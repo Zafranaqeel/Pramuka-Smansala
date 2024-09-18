@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 212, 177);
+}
+header{
+    margin: 0;
+    padding: 5px 0;
+    background-color: brown;
+    text-align: center;
+}
+header h1, h2, h3, h4{
+    margin: 5px;
+    color: white;
+}
+nav{
+    position: sticky;
+    top: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    text-align: center;
+    justify-content: center;
+    padding: 8px 0;
+    place-items: center;
+    z-index: 1000;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 999px;
+    border-color: rgb(255, 187, 131);
+    border-style: double;
+    padding: 5px;
+    margin: 0 auto;
+    width: 75%;
+}
+nav a:hover{
+    background-color: rgb(255, 187, 131);
+    border-color: grey;
+    color: brown;
+    animation: ease-in 10s;
+}
+main{
+    margin: 10px 30px;
+}
+#pengurus{
+    text-align: center;
+    margin: 0 auto;
+}
+#ku{
+    border-radius: 999px;
+    background-color: brown;
+    color: white;
+    max-width: fit-content;
+    padding: 1.5px 25px;
+    margin: 10px auto;
+}
+#ku h2, h3{
+    margin: 5px;
+}
+#waku{
+    border-radius: 999px;
+    background-color: brown;
+    color: white;
+    max-width: fit-content;
+    padding: 1.5px 25px;
+    margin: 10px auto;
+}
+#waku h2, h3{
+    margin: 5px;
+}
+.sekben{
+    display: flex;
+    justify-content: space-evenly;
+}
+#krani, #bankir{
+    border-radius: 999px;
+    background-color: brown;
+    color: white;
+    max-width: max-content;
+    padding: 1.5px 25px;
+    margin: 0;
+}
+#krani #bankir h2, h3{
+    margin: 5px;
+}
+#aturan{
+    border: 15px groove #a52a2a;
+    background: #b2b2b2;
+    width: 50%;
+    margin: 10px auto;
+}
+#aturan h1{
+    text-align: center;
+}
+#aturan h2{
+    color: black;
+    margin: 0 15px;
+}
+#aturan h3{
+    color: black;
+}
+#anggota h1{
+    text-align: center;
+}
+#anggota h3{
+    text-align: center;
+    color: black;
+}
+#document h1{
+    text-align: center;
+}
+#document h3{
+    text-align: center;
+    color: black;
+}
+footer{
+    padding: 25px;
+    margin: 0;
+    background-color: brown;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        font-size: 90%;
+    }
+    nav{
+        padding: 0;
+        font-size: 80%;
+    }
+    .sekben{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2px;
+        font-size: 53%;
+    }
+    #krani, #bankir{
+        border-radius: 999px;
+        background-color: brown;
+        color: white;
+        max-width: max-content;
+        padding: 1.5px 25px;
+        margin: 0;
+    }
+    #krani #bankir h2, h3{
+        margin: 5px;
+    }
+    #aturan{
+        width: 95%;
+    }
+}
