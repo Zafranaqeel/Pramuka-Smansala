@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 212, 177);
+}
+header{
+    margin: 0;
+    padding: 5px 0;
+    background-color: brown;
+    text-align: center;
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding:0;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto 10px;
+    width: auto;
+}
+nav a:hover{
+    background-color: #a52a2a;
+    color: #ffd000;
+    transition: ease-in-out;
+    padding: 10px;
+}
+nav a img {
+    width: auto;
+    height: 75px;
+    margin: 0 400px 0 0;
+    padding: 0;
+}
+main{
+    margin: 10px 30px;
+}
+/*Slide Image*/
+.slider {
+    width: 500px;
+    height: 300px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .image-container {
+    width: 1500px;
+    background-color: pink;
+    height: 300px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+  }
+  .slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+  }
+  #slide-1:target ~ .image-container {
+    left: 0px;
+  }
+  #slide-2:target ~ .image-container {
+    left: -500px;
+  }
+  #slide-3:target ~ .image-container {
+    left: -1000px;
+  }
+  .buttons {
+    position: relative;
+    top: -20px;
+  }
+  .buttons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+
+.PH img{
+    display:block;
+    margin:auto;
+    width:75%;
+}
+/*Berita*/
+ #news .berita{
+  display:grid;
+  grid-template-columns:repeat(2,50%);
+  gap:10px;
+  margin:10px;
+}
+#news .berita div #berita-1{
+  background-color:#ffffff;
+  width:500px;
+  height:auto;
+  padding:15px;
+}
+#news .berita div #berita-2{
+  background-color:#ffffff;
+  width:500px;
+  height:auto;
+  padding:15px;
+}
+footer{
+  color: #ffffff;
+    padding: 25px;
+    margin: 0;
+    background-color: brown;
+    text-align: center;
+}
+@media (max-width: 767px) {
+  body {
+      padding: 0;
+  }
+
+  nav {
+      flex-direction: column;
+  }
+
+  nav a {
+      margin: 0;
+      padding: 5px 10px;
+  }
+
+  .slider {
+      width: 100%; 
+      height: 10%; 
+  }
+
+  .image-container {
+      width: 100%; /* Tetap proporsional sesuai slider */
+      overflow: hidden;
+  }
+
+  #news .berita {
+      grid-template-columns: 1fr; /* Ubah kolom menjadi 1 */
+      gap: 15px; /* Tambahkan jarak antar elemen */
+      max-width: 750px;
+  }
+
+  #news .berita div #berita-1, 
+  #news .berita div #berita-2 {
+      width: 100%; /* Lebar penuh */
+  }
+
+  .PH img {
+      width: 100%; /* Pastikan gambar memiliki lebar penuh */
+  }
+
+  footer {
+      padding: 15px; /* Sesuaikan padding untuk footer */
+      font-size: 0.9em; /* Sesuaikan ukuran teks */
+  }
+}
